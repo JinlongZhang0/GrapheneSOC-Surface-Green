@@ -1,0 +1,93 @@
+\begin{thebibliography}{10}
+
+\bibitem{novoselov2005two}
+Kostya~S Novoselov, Andre~K Geim, SVb Morozov, Da~Jiang, Michail~I Katsnelson,
+  IVa Grigorieva, SVb Dubonos, Firsov, and AA.
+\newblock Two-dimensional gas of massless dirac fermions in graphene.
+\newblock {\em nature}, 438(7065):197, 2005.
+
+\bibitem{novoselov2007rise}
+Konstantin~S Novoselov and AK~Geim.
+\newblock The rise of graphene.
+\newblock {\em Nat. Mater}, 6(3):183--191, 2007.
+
+\bibitem{Castro2009}
+A.~H. Castro~Neto, F.~Guinea, N.~M.~R. Peres, K.~S. Novoselov, and A.~K. Geim.
+\newblock The electronic properties of graphene.
+\newblock {\em Rev. Mod. Phys.}, 81:109--162, Jan 2009.
+
+\bibitem{Kane2005}
+C.~L. Kane and E.~J. Mele.
+\newblock ${Z}_{2}$ topological order and the quantum spin hall effect.
+\newblock {\em Phys. Rev. Lett.}, 95:146802, Sep 2005.
+
+\bibitem{Kane2005_1}
+C.~L. Kane and E.~J. Mele.
+\newblock Quantum spin hall effect in graphene.
+\newblock {\em Phys. Rev. Lett.}, 95:226801, Nov 2005.
+
+\bibitem{Qi2011}
+Xiao-Liang Qi and Shou-Cheng Zhang.
+\newblock Topological insulators and superconductors.
+\newblock {\em Rev. Mod. Phys.}, 83:1057--1110, Oct 2011.
+
+\bibitem{Bansil2016}
+A.~Bansil, Hsin Lin, and Tanmoy Das.
+\newblock Colloquium: Topological band theory.
+\newblock {\em Rev. Mod. Phys.}, 88:021004, Jun 2016.
+
+\bibitem{Haldane1988}
+F.~D.~M. Haldane.
+\newblock Model for a quantum hall effect without landau levels:
+  Condensed-matter realization of the "parity anomaly".
+\newblock {\em Phys. Rev. Lett.}, 61:2015--2018, Oct 1988.
+
+\bibitem{Jiang2012}
+Hua Jiang, Zhenhua Qiao, Haiwen Liu, and Qian Niu.
+\newblock Quantum anomalous hall effect with tunable chern number in magnetic
+  topological insulator film.
+\newblock {\em Phys. Rev. B}, 85:045445, Jan 2012.
+
+\bibitem{WangJ2013}
+Jing Wang, Biao Lian, Haijun Zhang, Yong Xu, and Shou-Cheng Zhang.
+\newblock Quantum anomalous hall effect with higher plateaus.
+\newblock {\em Phys. Rev. Lett.}, 111:136801, Sep 2013.
+
+\bibitem{rortais2018}
+F~Rortais, S~Lee, R~Ohshima, S~Dushenko, Y~Ando, and M~Shiraishi.
+\newblock Spin-orbit coupling induced by bismuth doping in silicon thin films.
+\newblock {\em Applied Physics Letters}, 113(12):122408, 2018.
+
+\bibitem{Mingda2017}
+Mingda Li, Qichen Song, Weiwei Zhao, Joseph~A. Garlow, Te-Huan Liu, Lijun Wu,
+  Yimei Zhu, Jagadeesh~S. Moodera, Moses H.~W. Chan, Gang Chen, and Cui-Zu
+  Chang.
+\newblock Dirac-electron-mediated magnetic proximity effect in topological
+  insulator/magnetic insulator heterostructures.
+\newblock {\em Phys. Rev. B}, 96:201301, Nov 2017.
+
+\bibitem{chang2013}
+Cui-Zu Chang, Jinsong Zhang, Xiao Feng, Jie Shen, Zuocheng Zhang, Minghua Guo,
+  Kang Li, Yunbo Ou, Pang Wei, Li-Li Wang, et~al.
+\newblock Experimental observation of the quantum anomalous hall effect in a
+  magnetic topological insulator.
+\newblock {\em Science}, 340(6129):167--170, 2013.
+
+\bibitem{Hasan2010}
+M.~Z. Hasan and C.~L. Kane.
+\newblock Colloquium: Topological insulators.
+\newblock {\em Rev. Mod. Phys.}, 82:3045--3067, Nov 2010.
+
+\bibitem{Qi2006}
+Xiao-Liang Qi, Yong-Shi Wu, and Shou-Cheng Zhang.
+\newblock General theorem relating the bulk topological number to edge states
+  in two-dimensional insulators.
+\newblock {\em Phys. Rev. B}, 74:045125, Jul 2006.
+
+\bibitem{sancho1985}
+MP~Lopez Sancho, JM~Lopez Sancho, JM~Lopez Sancho, and J~Rubio.
+\newblock Highly convergent schemes for the calculation of bulk and surface
+  green functions.
+\newblock {\em Journal of Physics F: Metal Physics}, 15(4):851, 1985.
+
+\end{thebibliography}
