@@ -1,0 +1,104 @@
+	\section{引言}\label{sec:intro}
+    石墨烯是一种二维碳纳米材料，具有蜂窝状的六角晶型,如图\ref{fig:graphene}~(a)所示。石墨烯的外层电子共有四个，其中三个发生sp2杂化，与周围碳原子之间形成$\sigma$键，非常稳固；另一个电子处于垂直方向上的$p_z$轨道，形成离域的大$\Pi$键，作用较弱。正是由于$\Pi$电子作用力很弱，游离在整个晶面中，因此给石墨烯带来了超高的电导率。而在石墨的多层结构中，层间是由范德瓦尔兹力连接，因而层与层之间很容易剥离。sp2形式杂化的碳原子六角密排而成的二维蜂窝状晶体结构，其碳-碳键长约0.142nm，单层厚度0.334nm，仅为头发丝直径的20万分之一，是目前发现的最薄的层状材料。
+    \begin{figure}
+      \centering
+      \includegraphics[width=0.5\textwidth]{pic/fig0.pdf}
+      \caption{(a)石墨烯晶格；(b)石墨烯第一布里渊区；(c)第一布里渊区能带。}\label{fig:graphene}
+    \end{figure}
+    2004年英国曼彻斯特大学的Geim教授课题组首次在实验中巧妙的用机械剥离的办法得到单层石墨烯，此后诸多的实验揭示了石墨烯与众不同的物性\cite{novoselov2005two,novoselov2007rise,Castro2009}，包括力学、热学上的稳定性等等。此外，石墨烯的导电性为目前已知的二维材料中导电性能最为出色的。
+	
+    石墨烯的能带结构非常特殊，在布里渊区边界的$\mathbf{K}$点及$\mathbf{K}'$点处，如图\ref{fig:graphene}~(b)所示，由于偶然简并，导带与价带接触于一点，且具有线性的色散关系, 如图\ref{fig:graphene} (c)所示。这种结构被称为Dirac锥，这个锥是由质量为零的Dirac方程描述的，所以这个锥被称为Dirac锥，而交点叫做Dirac点，它的行为表现为无质量的Dirac费米子。因此电子在石墨烯内传输时不易因阻力而发生散射，故石墨烯中的电子迁移率异常之高。研究表明，石墨烯中的电子迁移率高达$2\times 10^6 $cm$^2$/V$\cdot$ s，约为硅电子迁移率的140倍\cite{Castro2009,Kane2005,Kane2005_1}。
+
+    二维拓扑绝缘体，即具有与普通绝缘体不同拓扑数的体系，首先表现出的现象即为量子自旋霍尔效应（Quantum Spin Hall Effect，QSHE）。在石墨烯中，C.L.Kane和E.J.Mele首先指出，当这个体系存在自旋轨道耦合时，Dirac点处会打开带隙，在特定的参数范围内，会出现自旋极化的一维边缘态，如图所示。也就是说，在其边界上，存在一对导电通道，它们自旋相反且沿相反的方向传输，这样的输运特性叫做螺旋性（helicity），是自旋动量锁定（spin-momentum locking）的。因为每个通道的霍尔电导为$\frac{e^2}{h}$，所以总的霍尔电导为零。而它的自旋霍尔电导则为$\sigma_{xy,\text{SPIN}}=2\frac{e}{4\pi}$。故其为量子自旋霍尔态。量子自旋霍尔态可以看做是两个量子霍尔态的组合，它的螺旋性的边态是两个自旋极化的手性态的组合，这就形成了时间反演保持的配对\cite{Qi2011}。
+
+    \begin{figure}
+      \centering
+      \includegraphics[width=0.5\textwidth]{pic/fig0_2.jpg}
+      \caption{能带反转示意图:(a)平庸绝缘态带隙(b)偶然简并在临界点处闭合(c)能带反转并产生非平庸带隙\cite{Bansil2016}}\label{fig:BI}
+    \end{figure}
+
+    相较于传统模型中、强磁场形成量子化朗道能级导致了霍尔电导的整数化效应，Haldane\cite{Haldane1988}发现在六角蜂窝状晶格中引入交错磁通破坏时间反演对称性后，在无外场的条件下仍能打开一个拓扑非平庸的能隙，实现反常的量子霍尔效应。在有如上晶格结构的石墨烯中，可通过添加Rashba自旋轨道耦合实现磁通的交错，并引入磁交换作用破坏时间反演对称性，最终解出在石墨烯中受拓扑保护的手性边缘态。在实验上，可以在石墨烯晶格中引入吸附磁性原子提供局域磁矩，或增强样品与反铁磁衬底间的耦合作用，以期待实现室温中的量子反常霍尔效应。
+
+    本文主要基于能带反转的图像，介绍如何通过自旋轨道耦合和磁Zeeman效应在石墨烯体系此类多Dirac锥体系实现$C=2$的量子霍尔效应。不同于薄层多带体系中高Chern数的实现\cite{Jiang2012,WangJ2013}，该高Chern数来源于石墨烯能带$\mathbf{K}$和$\mathbf{K}'$的等价性。主要行文安排如下:\ref{sec:intro}主要介绍石墨烯及其量子反常霍尔效应的背景和实现量子反常霍尔效应的指导原则，\ref{sec:model}给出了格点模型和描述边缘态的方法，然后，\ref{sec:result}分析边缘态的输运性质，最后，\ref{sec:summary}给出总结。其他一些支持材料列在\ref{sec:code}。
+
+	\section{理论模型及其能带}\label{sec:model}
+	首先，石墨烯晶体结构空间群属于P6/mmm(No.191),具有$C_{6v}$的对称性，可以用2D六角晶格模型进行描述，利用重元素掺杂可以增强自旋轨道耦合(SOC)强度\cite{rortais2018}，从而实现能带反转，通过磁近邻\cite{Mingda2017}或者磁掺杂\cite{chang2013}等手段可以可以实现对于磁Zeeman效应的调控。利用紧束缚近似，可以写出格点哈密顿量
+	\begin{equation}
+	\begin{aligned}
+		H=&-t\sum_{\langle i,j\rangle\alpha}c_{i,\alpha}^\dagger c_{j,\alpha}\\
+            &+i t_{\text{SO}} \sum_{\langle i,j\rangle\alpha\beta}\hat{\mathbf{e}}_z\cdot(\mathbf{\sigma}_{\alpha,\beta}\times\mathbf{d}_{i,j})c_{i,\alpha}^\dagger c_{j,\beta}	\\
+		&+\lambda\sum_{i,\alpha} c_{i,\alpha}^\dagger c_{i,\alpha},
+		\end{aligned}
+	\end{equation}
+	其中，$c^\dagger_{i,\alpha}(c_{i,\alpha})$ 是自旋为$ \alpha $的电子在格点$ i $的产生（湮灭）算符，$\mathbf{\sigma}$是自旋-$\frac{1}{2}$的Pauli矩阵，$\langle i,j\rangle$表示最近临格点，$\mathbf{d}_{i,j} $ 是归一化后的$\mathbf{r}_i-\mathbf{r}_j$。第一项为最近临的跃迁项，表示强度为$t$的动能项，第二项描述强度$t_{\textbf{SO}}$的Rashba型的自旋轨道耦合项，第三项为磁化诱导的自旋劈裂项，强度用$\lambda$来描述。
+	
+	对于无穷大体系，$k_x$,$k_y$均是好量子数。通过紧束缚近似，可得到Bloch哈密顿量：
+	\begin{equation}
+	\begin{aligned}
+	H(\mathbf{k})=&-t[2\cos{(\frac{\sqrt{3}}{2}k_x a)}\cos{(\frac{k_y a}{2})}+\cos{(k_y a)}]\tau_x	\\
+	&-t[-2\cos{(\frac{\sqrt{3}}{2}k_x a)}\sin{(\frac{k_y a}{2})}+\sin{(k_y a)}]\tau_y\\
+	&-t_{\text{SO}} [\cos{(\frac{k_y a}{2})}\cos{(\frac{\sqrt{3}}{2}k_x a)-\cos{(k_y a)}}]*\sigma_x\tau_y\\
+	&-\sqrt{3} t_{\text{SO}}\sin{(\frac{k_y a}{2})}\sin{(\frac{\sqrt{3}}{2}k_x a)}*\sigma_y\tau_y\\
+	&-t_{\text{SO}} [\sin{(\frac{k_y a}{2})}\cos{(\frac{\sqrt{3}}{2} k_x a)}+\sin{(k_y a)}]\sigma_x\tau_x\\
+	&+\sqrt{3}t_{\text{SO}} \cos{(\frac{k_y a}{2})}\sin{(\frac{\sqrt{3}}{2}k_x a)}\sigma_y\tau_x\\
+	&+\lambda \sigma_z.
+	\end{aligned}
+	\end{equation}
+	其中，$\mathbf{\sigma}$,$\mathbf{\tau}$分别对应着自旋和子晶格的Pauli矩阵。当$\lambda=0,t_{\text{SO}}=0$时，能带如图\ref{fig1:BandStructure}~(a),在$\mathbf{K},\mathbf{K'}$上，分别有Dirac锥，系统退化为普通的石墨烯。此时，该系统除了晶格对称性外，还具有时间反演对称性$\mathcal{T}=i\sigma_y K$和手征对称$\mathcal{C}=\sigma_x \tau_y K$(Chiral Asymmetry)，其中$K$是取复共轭。由于，空间反演对称性$P$和时间反演对称性$\mathcal{T}$组成反幺正的$P\mathcal{T}$对称性，具有Krammer doublet，使得体系在所有动量点都具有双重简并。当只考虑Zeeman劈裂效应，时间反演对称性被破坏，Krammer简并不再存在，Zeeman场分别将自旋-$\downarrow$和自旋-$\uparrow$劈裂，得到两个Weyl点，如图\ref{fig1:BandStructure}~(b)。同时，不难发现，如果只考虑离费米面最近的两带模型，在时间反演不变动量点(TRIM)附近，自旋-$\uparrow$能量高于自旋-$\downarrow$，在远离TRIM处，自旋-$\downarrow$能量高于自旋-$\uparrow$。这有点类似于自旋分量的能带反转(Band Inversion)当只考虑SOC的效应，由于$\mathcal{T}$，在TRIM，能带仍然具有双重简并，其他动量点由于形如Rashaba的自旋轨道耦合效应($\mathbf{H}_{\text{Rashba}}=k_x\tau_y-k_y\tau_x$)，造成了能级劈裂$\Delta E=2\sqrt{kx^2+ky^2}$，其中$k_x,k_y$为相对于TRIM的动量，如图\ref{fig1:BandStructure}~(c)。基于SOC效应的能带，加上适当的磁场Zeeman劈裂，$\mathcal{T}$对称性的破坏使得每个态具有自旋极化。对于TRIM，由于Rashba的SOC没有打开该点的简并，Zeeman场使得自旋分量出现类似于图\ref{fig1:BandStructure}~(b)的Band Inversion，在一般动量点处，由于SOC效应本来就打开了一个能隙(gap)，所以，Zeeman的效果只是累计自旋极化，如图\ref{fig1:BandStructure}~(d)。或者从图\ref{fig1:BandStructure}~(b)中的自旋部分的Band Inversion出发，SOC只是在一般动量点上打开一个gap。另外，从图\ref{fig1:BandStructure}~(f)可知，此时，Orbit的Band Inversion发生了。同时，由于$\mathbf{K}$和$\mathbf{K}'$的等价性，这两个动量点处的Dirac锥构型等价，所以，总体Chern数为$2N$，其中$N$为整数。
+	
+	\begin{figure}
+	    \centering
+	    \includegraphics[width=0.5\textwidth]{pic/fig1.pdf}
+	    \caption{(a)当$t_{\text{SO}}=0,\lambda=0,k_y=0$时的能带结构;(b)当$t_{\text{SO}}=0,\lambda=0.18,k_y=0$时，能带和自旋随着$k_x$变化;(c)当$t_{\text{SO}}=0.2,\lambda=0,k_y=0$时的能带结构;(d)能带和自旋随着$k_x$变化(f)能带和子晶格$\langle \tau_z\rangle$随着$ k_x$变化。(d-f)中的参数为$t_{\text{SO}}=0.2,\lambda=0.18,k_y=0$。}	    \label{fig1:BandStructure}
+	\end{figure}
+	
+	
+	由于拓扑材料的体边对应(bulk-edge correspondence)性质\cite{Hasan2010}，能带的总体拓扑性质可以通过边缘态色散和波函数分布来判断。因此，我们分别采用了纳米带结构下的格点模型\cite{Qi2006}和迭代格林函数\cite{sancho1985}来研究Zigzag边缘态的性质。
+	
+	在纳米带下，石墨烯的晶体结构如图\ref{fig2:OPB}~(a),相对于无限大体系，Zigzag边界的纳米带元胞有4个子晶格(已用绿色方框标出)。由于x方向仍然具有平移对称性，所以，$k_x$仍然是好量子数，取y方向的两端开边界，求解出边缘态色散。
+
+	半无限大块材通过自能会对表面能带和表面态密度造成影响，因此，我们利用迭代格林函数可以得到求得表面态密度。迭代格林函数的逻辑方法如下：1. 分别建立表面哈密顿量$H_S$和体部分的哈密顿量$H_R$，同时，根据总体对称性，我们可以把体部分当成一个个一维链，链与链之间的连接由$H_{R_i,R_{i+1}}$表示；2.由于x方向仍然具有平移不变性,各部分哈密顿量可以写为$k_x$的Bloch哈密顿量;3.根据Lopez提出的迭代格林函数快速收敛方法\cite{sancho1985}，我们可以利用下式进行截断求解，得到表面格林函数。
+	\begin{equation}
+	    \left\{
+	    \begin{aligned}
+	    G_s&=(\epsilon-H_S-\sum _R)^{-1}  \\
+	    \sum _R&=H_{S R_0} g_{R_0} H_{S,R_0}^\dagger\\
+	    g_{R_0}&=(\epsilon-H_{R_0}-H_{R_0,R_1}T)^{-1}\\
+        T&=t_0+\tilde{t}_0 t_1+\tilde{t}_0\tilde{t}_1t_2+...+\tilde{t}_0\tilde{t}_1\dots t_N
+	    \end{aligned}
+	    \right.
+	\end{equation}
+    \[
+    \begin{aligned}
+    t_0&=(\epsilon-H_{R_0})^{-1}H_{R_0,R_1}^\dagger\\
+    \tilde{t}_0&=(\epsilon-H_{R_0})^{-1}H_{R_0,R_1}\\
+    t_i&=(\mathbb{I}-t_{i-1}\tilde{t}_{i_1}-\tilde{t}_{i_1} t_{i-1})^{-1} t_{i-1}^2 \\
+    \tilde{t}_i&=(\mathbb{I}-t_{i-1}\tilde{t}_{i_1}-\tilde{t}_{i_1} t_{i-1})^{-1} \tilde{t}_{i-1}^2
+    \end{aligned}
+    \]
+    不难从上式看出，迭代格林函数方法假设了链与链之间只有最近邻的连接。半无限大体部分对于表面部分的影响是通过最近邻的链连接进入表面部分的自能中。表面格林函数可以这样得到：
+    \begin{equation}
+      N(\epsilon)=-\frac{1}{\pi}\text{Im}\sum_{\alpha} G_S^{\alpha,\alpha}(k_x,\epsilon+i\eta)
+    \end{equation}
+
+
+    \begin{figure}
+      \centering
+     \includegraphics[width=0.5\textwidth]{pic/fig2.pdf}
+      \caption{(a)纳米带结构下Zigzag开边界的石墨烯结构;(b)纳米带结构下格点模型的边缘态色散谱及其波函数的位置相对期望，从\ref{fig2:OPB}最上端至最下端，分别标为0,$L_y$;(c)纳米带结构下格点模型中$E_F=0.04t$时边缘态的波函数分布;(d)迭代格林函数得到的表面态密度(Surface DOS).参数分别为$t=1.0,t_{\text{SO}}=0.2,\lambda=0.18,L_y=200.$}
+	    \label{fig2:OPB}
+    \end{figure}
+
+    \section{边缘态输运分析}\label{sec:result}
+    现在，我们主要关注Zigzag边缘态的性质。图\ref{fig2:OPB}~(d)为用格林函数法解出的电子态密度（打开一侧$y$方向的zigzag链形成边界，将算得的态密度投影到$y_\text{min}=0$处），可清晰地看到一条明显区别于体态的无能隙手性边缘态：当费米面处于能隙中时，与边缘态色散有两个交点，且这两个电子态均沿着-$x$方向传播。
+
+    为进一步理解所得边缘态与边界的关系，通过设置$y$方向为开边界，进行边缘态能谱和波函数计算。图\ref{fig2:OPB}~(b)表示了边缘态能谱，每个点对应的颜色表示波函数的位置期望，计为$\langle y\rangle=\frac{\langle \psi(k)\vert\hat{y} \vert \psi(k)\rangle-L_y/2}{Ly/2}$，其中$L_y$是$y$方向的格点数。两根蓝色（粉色）的线代表从$\mathbf{K}$（$\mathbf{K}'$）到$\mathbf{K}'$（$\mathbf{K}$）点的手性边缘态，对应在实空间中为同一个边界上的电子分别沿相同方向的运动，Chern
+数应当为2。其中蓝色的边缘态的位置对应着图\ref{fig2:OPB}~(a)最上方的边界与图\ref{fig2:OPB}~(d)符合。当费米面为$0.04t$时，计算这四个边缘态上的电子波函数沿y方向石墨烯原胞数增加时的分布情况，观察到它极大地分布在两侧的原胞内，而在体态中间的原胞内基本为0，沿$-x$方向的电子（$k_x=2.2,3.9$）集中在上表面，沿+x方向的电子（$k_x=2.4,4.1$）集中在下边界。并且，波函数具有明显奇偶振荡的规律，上表面的边缘态偏向于占据A格子，下表面边缘态偏向于占据B格子。这些结果均体现出打开了石墨烯边界后沿Zigzag链上的手性边缘态特征。
+
+    本征的无限大石墨烯体系因Dirac锥在$\mathbf{K}$、$\mathbf{K}'$点相交，自身属无带隙材料，而当同时考虑自旋轨道耦合与磁交换作用后，带隙在会在高对称点处打开。但在实验中，石墨烯样品总有边界，在边界上电子的单向传输正会对应到动量空间中连接$\mathbf{K}$与$\mathbf{K}'$点的手性边缘态，导致材料体态绝缘、边缘导电的输运性质。
+
+    在实验上，石墨烯在输运性质上表现出非常奇特的特性。通过强磁场低温下的输运研究，研究者可以清晰的得出费米面在Dirac点附近时，电子的激发模式表现出无质量狄拉克费米子的特点，通过进一步研究，在磁场下，霍尔电阻出现一系列平台，同时出现磁阻在对应磁场为$0$的现象，这是典型的量子霍尔效应的特点。但是与以往量子霍尔效应不同的是，在石墨烯中霍尔电阻出现平台时的电阻值为1/2、3/2、5/2、7/2,对应的朗道能级分别是2、6、10、14，这意味着在石墨烯在磁场的作用下形成量子化的朗道能级，但是每个朗道能级是四重简并的，其中二重简并来源于上表面的能带，二重简并来源于下表面的能带，这正好和我们的理论计算相吻合，更为惊喜的是，在强磁场下，会出现1/2态，这正是手性边缘态的证据。当体系在强磁场的作用下进入量子极限之后，手性边缘态表现出第零级朗道能级，因此出现1/2，-1/2的态，分别对应手性不同的两个边缘态，这和理论计算完全吻合。
+
+
+    \section{总结}\label{sec:summary}
+    我们首先通过计算二维无限大的石墨烯能带结构，得到线性的Dirac锥结构和四重简并的Dirac点。由于，等价第一布里渊区存在两个等价Dirac锥，通过引入Rashba自旋轨道耦合和磁交换场作用，使得两个Dirac锥同时Band Inversion，实现了从拓扑半金属到$C=2$量子反常霍尔效应的转变。当考虑Zigzag链的半无限大平面时，通过迭代方法解出打开一侧Zigzag链边界后、半无限大石墨烯表面的格林函数，观察到在该能隙中出现了电子态密度的极值，这对应着连接其K到K’点之间的手性边缘传输态，同时有限格点模型得到的电子波函数空间分布也验证了这一点。虽然，实验上石墨烯的SOC强度较弱，难以实现有效调控。但是，本文给出了基于多Dirac锥体系实现高Chern数量子反常霍尔效应的思路，希望在之后的实验中得以实现。
